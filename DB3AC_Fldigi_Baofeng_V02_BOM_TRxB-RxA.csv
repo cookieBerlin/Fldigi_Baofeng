@@ -1,0 +1,14 @@
+"Qty";"Value";"Device";"Package";"Parts";"Description";"MF";"MPN";"OC_CONRAD";"OC_FARNELL";"OC_NEWARK";"OC_SEGOR";"TP_SIGNAL_NAME";"TP_SIGNAL_NAME";
+"1";"100nF 50V";"CPOL-EUE2.5-7";"E2,5-7";"C2";"POLARIZED CAPACITOR, European symbol";"";"";"";"";"";"";"";"";
+"2";"10K";"POTENTIOMETER_PT-10";"PT-10";"R1A, R2A";"Potentiometer";"";"";"";"";"";"";"";"";
+"1";"10K";"R-EU_0204/7";"0204/7";"R5";"RESISTOR, European symbol";"";"";"";"";"";"";"";"";
+"1";"10µF 35V";"CPOL-EUE2.5-7";"E2,5-7";"C1";"POLARIZED CAPACITOR, European symbol";"";"";"";"";"";"";"";"";
+"1";"2024TRP-BL";"2024TRP-BL";"2024";"CASE1";"Link: http://strapubox.de/modules/uploadmanager11/admin/index.php?action=file_download&file_id=156&location_id=0";"";"";"525967";"";"";"2024 trp-bl";"";"";
+"2";"BAT48";"BAT42";"DO35-10";"D1, D2";"DIODE";"";"";"";"";"";"";"";"";
+"1";"BC547";"BC547-NPN-TO92-CBE";"TO92-CBE";"T1";"NPN Transistror";"";"";"";"";"";"";"";"";
+"1";"Baofeng";"MA04-1";"MA04-1";"SV3";"PIN HEADER";"";"";"";"unknown";"unknown";"";"";"";
+"3";"EI14_600OHM";"EI14_600OHM";"EI14";"TR1B, TR2B, TR3B";"Audio Transformer 600:600 Ohm 1:1 EI14 Kupplung Isolation Transformator";"";"";"";"";"";"";"";"";
+"1";"OSHWLOGOLOGO8MM";"OSHWLOGOLOGO8MM";"OSHW_8MM";"GOLD_ORB_SM1";"The OSHW logo for PCB layout";"";"";"";"";"";"";"";"";
+"1";"TO MIC";"MA03-1";"MA03-1";"SV2";"PIN HEADER";"";"";"";"unknown";"unknown";"";"";"";
+"1";"TO SPK";"MA03-1";"MA03-1";"SV1";"PIN HEADER";"";"";"";"unknown";"unknown";"";"";"";
+"2";"TPPAD1-13Y";"TPPAD1-13Y";"P1-13Y";"TP1, TP2";"Test pad";"";"";"";"";"";"";"";"";

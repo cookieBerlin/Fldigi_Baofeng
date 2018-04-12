@@ -14402,20 +14402,45 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attributes>
 </attributes>
 <variantdefs>
+<variantdef name="TRxA, RxA"/>
+<variantdef name="TRxB, RxA"/>
+<variantdef name="TRxA, RxB"/>
+<variantdef name="TRxB, RxB"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
 <parts>
-<part name="TR3B" library="TransformerAudio" deviceset="EI14_600OHM" device=""/>
-<part name="TR2B" library="TransformerAudio" deviceset="EI14_600OHM" device=""/>
-<part name="TR1B" library="TransformerAudio" deviceset="EI14_600OHM" device=""/>
+<part name="TR3B" library="TransformerAudio" deviceset="EI14_600OHM" device="">
+<variant name="TRxA, RxA" populate="no"/>
+<variant name="TRxA, RxB" populate="no"/>
+</part>
+<part name="TR2B" library="TransformerAudio" deviceset="EI14_600OHM" device="">
+<variant name="TRxA, RxA" populate="no"/>
+<variant name="TRxA, RxB" populate="no"/>
+</part>
+<part name="TR1B" library="TransformerAudio" deviceset="EI14_600OHM" device="">
+<variant name="TRxA, RxA" populate="no"/>
+<variant name="TRxA, RxB" populate="no"/>
+</part>
 <part name="FRAME1" library="frames" deviceset="A4L-LOC" device="" value="_"/>
-<part name="R1B" library="rcl" deviceset="R-TRIMM" device="3339P" value="10K"/>
-<part name="R1A" library="rcl" deviceset="POTENTIOMETER_" device="PT-10" value="10K"/>
-<part name="R2B" library="rcl" deviceset="R-TRIMM" device="3339P" value="10K"/>
-<part name="R2A" library="rcl" deviceset="POTENTIOMETER_" device="PT-10" value="10K"/>
+<part name="R1B" library="rcl" deviceset="R-TRIMM" device="3339P" value="10K">
+<variant name="TRxA, RxA" populate="no"/>
+<variant name="TRxB, RxA" populate="no"/>
+</part>
+<part name="R1A" library="rcl" deviceset="POTENTIOMETER_" device="PT-10" value="10K">
+<variant name="TRxA, RxB" populate="no"/>
+<variant name="TRxB, RxB" populate="no"/>
+</part>
+<part name="R2B" library="rcl" deviceset="R-TRIMM" device="3339P" value="10K">
+<variant name="TRxA, RxA" populate="no"/>
+<variant name="TRxB, RxA" populate="no"/>
+</part>
+<part name="R2A" library="rcl" deviceset="POTENTIOMETER_" device="PT-10" value="10K">
+<variant name="TRxA, RxB" populate="no"/>
+<variant name="TRxB, RxB" populate="no"/>
+</part>
 <part name="CASE1" library="CaseStrapubox" deviceset="2024" device="" technology="TRP-BL"/>
 <part name="SV1" library="con-lstb" deviceset="MA03-1" device="" value="TO SPK"/>
 <part name="SV2" library="con-lstb" deviceset="MA03-1" device="" value="TO MIC"/>
@@ -14424,12 +14449,21 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R5" library="rcl" deviceset="R-EU_" device="0204/7" value="10K"/>
 <part name="D1" library="diode" deviceset="BAT42" device="" value="BAT48"/>
 <part name="D2" library="diode" deviceset="BAT42" device="" value="BAT48"/>
-<part name="C1" library="rcl" deviceset="CPOL-EU" device="E2.5-7" value="10µF"/>
-<part name="C2" library="rcl" deviceset="CPOL-EU" device="E2.5-7" value="100nF"/>
+<part name="C1" library="rcl" deviceset="CPOL-EU" device="E2.5-7" value="10µF 35V"/>
+<part name="C2" library="rcl" deviceset="CPOL-EU" device="E2.5-7" value="100nF 50V"/>
 <part name="GOLD_ORB_SM1" library="oshw" deviceset="OSHWLOGO" device="LOGO8MM" value="OSHWLOGOLOGO8MM"/>
-<part name="TR1A" library="TransformerAudio" deviceset="ETAL_P1200" device=""/>
-<part name="TR2A" library="TransformerAudio" deviceset="ETAL_P1200" device=""/>
-<part name="TR3A" library="TransformerAudio" deviceset="ETAL_P1200" device=""/>
+<part name="TR1A" library="TransformerAudio" deviceset="ETAL_P1200" device="">
+<variant name="TRxB, RxA" populate="no"/>
+<variant name="TRxB, RxB" populate="no"/>
+</part>
+<part name="TR2A" library="TransformerAudio" deviceset="ETAL_P1200" device="">
+<variant name="TRxB, RxA" populate="no"/>
+<variant name="TRxB, RxB" populate="no"/>
+</part>
+<part name="TR3A" library="TransformerAudio" deviceset="ETAL_P1200" device="">
+<variant name="TRxB, RxA" populate="no"/>
+<variant name="TRxB, RxB" populate="no"/>
+</part>
 <part name="TP1" library="testpad" deviceset="TP" device="PAD1-13Y"/>
 <part name="TP2" library="testpad" deviceset="TP" device="PAD1-13Y"/>
 </parts>

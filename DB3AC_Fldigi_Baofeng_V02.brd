@@ -1616,6 +1616,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attributes>
 </attributes>
 <variantdefs>
+<variantdef name="TRxA, RxA"/>
+<variantdef name="TRxB, RxA"/>
+<variantdef name="TRxA, RxB"/>
+<variantdef name="TRxB, RxB"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
@@ -1801,30 +1805,44 @@ design rules under a new name.</description>
 <element name="TR3B" library="TransformerAudio" package="EI14" value="EI14_600OHM" x="26.5" y="9.5" smashed="yes">
 <attribute name="NAME" x="18.5" y="2" size="1.27" layer="25" font="vector"/>
 <attribute name="VALUE" x="29.04" y="5.69" size="1.27" layer="27" rot="R90"/>
+<variant name="TRxA, RxA" populate="no"/>
+<variant name="TRxA, RxB" populate="no"/>
 </element>
 <element name="TR2B" library="TransformerAudio" package="EI14" value="EI14_600OHM" x="38" y="28" smashed="yes">
 <attribute name="NAME" x="30" y="20.5" size="1.27" layer="25" font="vector"/>
 <attribute name="VALUE" x="40.54" y="24.19" size="1.27" layer="27" rot="R90"/>
+<variant name="TRxA, RxA" populate="no"/>
+<variant name="TRxA, RxB" populate="no"/>
 </element>
 <element name="TR1B" library="TransformerAudio" package="EI14" value="EI14_600OHM" x="19.5" y="35.5" smashed="yes">
 <attribute name="NAME" x="23" y="28" size="1.27" layer="25" font="vector"/>
 <attribute name="VALUE" x="22.04" y="31.69" size="1.27" layer="27" rot="R90"/>
+<variant name="TRxA, RxA" populate="no"/>
+<variant name="TRxA, RxB" populate="no"/>
 </element>
 <element name="R1B" library="rcl" package="RTRIM3339P" value="10K" x="11.5" y="17.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="12.5" y="9.5" size="1.27" layer="25" font="vector"/>
 <attribute name="VALUE" x="14.015" y="23.105" size="1.27" layer="27" rot="R180"/>
+<variant name="TRxA, RxA" populate="no"/>
+<variant name="TRxB, RxA" populate="no"/>
 </element>
 <element name="R1A" library="rcl" package="PT-10" value="10K" x="11.5" y="17.5" smashed="yes">
 <attribute name="NAME" x="7.5" y="9.5" size="1.27" layer="25" font="vector" ratio="10"/>
 <attribute name="VALUE" x="8.452" y="9.88" size="1.27" layer="27" ratio="10"/>
+<variant name="TRxA, RxB" populate="no"/>
+<variant name="TRxB, RxB" populate="no"/>
 </element>
 <element name="R2B" library="rcl" package="RTRIM3339P" value="10K" x="53" y="24" smashed="yes">
 <attribute name="NAME" x="54" y="16.5" size="1.27" layer="25" font="vector"/>
 <attribute name="VALUE" x="50.485" y="18.395" size="1.27" layer="27"/>
+<variant name="TRxA, RxA" populate="no"/>
+<variant name="TRxB, RxA" populate="no"/>
 </element>
 <element name="R2A" library="rcl" package="PT-10" value="10K" x="53" y="24" smashed="yes" rot="R180">
 <attribute name="NAME" x="49.5" y="16.5" size="1.27" layer="25" font="vector" ratio="10"/>
 <attribute name="VALUE" x="56.048" y="31.62" size="1.27" layer="27" ratio="10" rot="R180"/>
+<variant name="TRxA, RxB" populate="no"/>
+<variant name="TRxB, RxB" populate="no"/>
 </element>
 <element name="CASE1" library="CaseStrapubox" package="2024" value="2024TRP-BL" x="0" y="0" locked="yes" smashed="yes">
 <attribute name="OC_CONRAD" value="525967" x="0" y="0" size="1.778" layer="27" display="off"/>
@@ -1872,11 +1890,11 @@ design rules under a new name.</description>
 <attribute name="NAME" x="55" y="40" size="1.27" layer="25" font="vector" ratio="10"/>
 <attribute name="VALUE" x="54.159" y="45.167" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="C1" library="rcl" package="E2,5-7" value="10µF" x="33" y="41" smashed="yes" rot="R270">
+<element name="C1" library="rcl" package="E2,5-7" value="10µF 35V" x="33" y="41" smashed="yes" rot="R270">
 <attribute name="NAME" x="35.5" y="43.5" size="1.27" layer="25" font="vector" ratio="10"/>
 <attribute name="VALUE" x="29.825" y="37.952" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="C2" library="rcl" package="E2,5-7" value="100nF" x="53" y="35" smashed="yes" rot="R270">
+<element name="C2" library="rcl" package="E2,5-7" value="100nF 50V" x="53" y="35" smashed="yes" rot="R270">
 <attribute name="NAME" x="56.5" y="32" size="1.27" layer="25" font="vector" ratio="10"/>
 <attribute name="VALUE" x="49.825" y="31.952" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
@@ -1887,6 +1905,8 @@ design rules under a new name.</description>
 <attribute name="HERSTELLER" value="ETAL" x="19.5" y="35.5" size="1.4224" layer="27" display="off"/>
 <attribute name="NAME" x="23" y="24.5" size="1.27" layer="25"/>
 <attribute name="VALUE" x="13.5" y="27.5" size="1.27" layer="27"/>
+<variant name="TRxB, RxA" populate="no"/>
+<variant name="TRxB, RxB" populate="no"/>
 </element>
 <element name="TR2A" library="TransformerAudio" package="ETAL_P1200" value="ETAL_P1200" x="38" y="28" smashed="yes">
 <attribute name="MPN" value="P1200" x="38" y="28" size="1.4224" layer="27" display="off"/>
@@ -1894,6 +1914,8 @@ design rules under a new name.</description>
 <attribute name="HERSTELLER" value="ETAL" x="38" y="28" size="1.4224" layer="27" display="off"/>
 <attribute name="NAME" x="24" y="20.5" size="1.27" layer="25"/>
 <attribute name="VALUE" x="32" y="20" size="1.27" layer="27"/>
+<variant name="TRxB, RxA" populate="no"/>
+<variant name="TRxB, RxB" populate="no"/>
 </element>
 <element name="TR3A" library="TransformerAudio" package="ETAL_P1200" value="ETAL_P1200" x="26.5" y="9.5" smashed="yes">
 <attribute name="MPN" value="P1200" x="26.5" y="9.5" size="1.4224" layer="27" display="off"/>
@@ -1901,6 +1923,8 @@ design rules under a new name.</description>
 <attribute name="HERSTELLER" value="ETAL" x="26.5" y="9.5" size="1.4224" layer="27" display="off"/>
 <attribute name="NAME" x="12" y="2" size="1.27" layer="25"/>
 <attribute name="VALUE" x="20.5" y="1.5" size="1.27" layer="27"/>
+<variant name="TRxB, RxA" populate="no"/>
+<variant name="TRxB, RxB" populate="no"/>
 </element>
 <element name="TP1" library="testpad" package="P1-13Y" value="TPPAD1-13Y" x="40" y="42.5" smashed="yes">
 <attribute name="TP_SIGNAL_NAME" value="" x="38.73" y="38.69" size="1" layer="37"/>
